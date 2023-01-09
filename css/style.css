@@ -49,6 +49,12 @@
 
   /* You can define a box shadow to make blocks look like paper cards ~~ Custom */
   --box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.5), 6px 6px 20px 0 rgba(0,0,0,0.25);
+
+  /* Header Shadow */
+  --title-shadow: 5px 5px 2px #000000, 6px 6px 10px #1a1a1a, 7px 7px 15px #333333, 8px 8px 20px #4d4d4d;
+
+  /* Subtitle Shadow */
+  --subtitle-shadow: 5px 5px 2px #000000, 6px 6px 10px #1a1a1a, 7px 7px 15px #333333, 8px 8px 20px #4d4d4d;
 }
 
 /* Basic Codes */
@@ -106,13 +112,13 @@ body {
 .header_text h1 {
   color: var(--title_color);
   font-size: 2em;
-  text-shadow: 5px 5px 2px black, 6px 6px 25px darkgray, 7px 7px 10px lightgray;
+  text-shadow: var(--title-shadow);
 }
 
 .header_text h2 {
   color: var(--description_color);
   font-size: 1.5em;
-  text-shadow: 2px 2px 3px black, 3px 3px 25px darkgray, 5px 5px 10px lightgray;
+  text-shadow: var(--subtitle-shadow);
 }
 
 /* Social Media Icons Codes */
